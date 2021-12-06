@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/aos.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header class="h-screen py-10 md:relative bg-gray-800 bg-bottom">
+      <div class="h-full text-center md:relative">
+        <h1
+          class="
+            text-gray-50 text-3xl
+            md:absolute md:top-[10vh] md:right-[20vw] md:text-[5vw]
+          "
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="100"
+        >
+          尋夢，築夢，追夢
+        </h1>
+        <p
+          class="
+            text-gray-100 text-xl
+            leading-5
+            mt-7
+            md:absolute md:top-[18vh] md:right-[10vw] md:text-[3vw]
+          "
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="700"
+        >
+          夢在哪，我在哪
+          <br class="md:hidden" />
+          <br class="md:hidden" />
+          <span class="hidden md:inline"> &nbsp;&nbsp;&nbsp;&nbsp; </span>
+          我不在，夢猶在
+        </p>
+      </div>
+      <img
+        src="./src/assets/becca-tapert-BsiyAubKJGY-unsplash-remake.png"
+        alt=""
+        class="
+          h-[50vh]
+          absolute
+          bottom-[0vh]
+          left-[15vw]
+          select-none
+          md:left-[20vw] md:h-[70vh]
+        "
+        data-aos="fade-zoom-in"
+        data-aos-duration="1500"
+        data-aos-delay="1500"
+      />
+      <div class="absolute bottom-5 right-4 md:hidden">
+        <label for="navListChecked" class="cursor-pointer">
+          <span class="border-[2px] rounded p-2 text-center">
+            <i class="fas fa-bars text-gray-50 text-xl"></i>
+          </span>
+        </label>
+      </div>
+    </header>
+    <nav class="fixed top-0 left-0 right-0 md:static">
+      <input
+        type="checkbox"
+        name="navList"
+        id="navListChecked"
+        class="hidden peer"
+      />
+      <div
+        id="navList"
+        class="
+          w-screen
+          -translate-y-full
+          peer-checked:translate-y-0
+          peer-checked:duration-200
+          peer-checked:ease-in-out
+          bg-red-400
+          md:translate-y-0
+        "
+      >
+        1234
+      </div>
+    </nav>
+    <script type="module" src="./src/main.js"></script>
+    <script src="./src/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "cross-env TAILWIND_MODE=build vite build --base=./",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.4.4",
+    "vitawind": "^1.2.9"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "aos": "^2.3.4",
+    "cross-env": "^7.0.3"
+  }
+}
