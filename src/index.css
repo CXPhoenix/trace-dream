@@ -31,6 +31,10 @@ header {
   background-blend-mode: multiply;
 }
 
+#canvas {
+  cursor:crosshair;
+}
+
 section {
   font-family: "cwTeXFangSong", sans-serif;
 }

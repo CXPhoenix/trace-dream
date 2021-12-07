@@ -9,6 +9,17 @@
   </head>
   <body>
     <header class="h-screen py-10 md:relative bg-gray-800/40 bg-bottom z-10">
+      <canvas id="canvas" class="absolute inset-0 z-20 w-full hidden md:block">
+        Canvas is not supported in your browser.
+      </canvas>
+      <div id="easternEgg" class="absolute hidden inset-0 flex justify-center">
+        <img class="opacity-80" src="./src/assets/eastern-egg.png" alt="eastern-egg" />
+        <div class="">
+          <span id="endEasternEgg" class="bg-gray-800 rounded-md text-blue-200 cursor-pointer justify-self-start animate-ping duration-75">
+            <i class="fas fa-times"></i>
+          </span>
+        </div>
+      </div>
       <div class="h-full text-center md:relative">
         <h1
           class="
@@ -37,9 +48,25 @@
         </p>
       </div>
       <img
+        src="./src/assets/stephen-leonardi-UxGw8Q2Tygw-unsplash-remake1.png"
+        alt=""
+        class="
+          h-[50vh]
+          absolute
+          bottom-[0vh]
+          left-[15vw]
+          select-none
+          md:left-[20vw] md:h-[70vh]
+        "
+        data-aos="fade-zoom-in"
+        data-aos-duration="1500"
+        data-aos-delay="1500"
+      />
+      <img
         src="./src/assets/becca-tapert-BsiyAubKJGY-unsplash-remake.png"
         alt=""
         class="
+          hidden
           h-[50vh]
           absolute
           bottom-[0vh]
@@ -370,7 +397,19 @@
     <section id="credit" class="mt-5">
       <p class="flex flex-col text-center bg-gray-500 text-gray-100">
         <span class="uppercase">power by fhsh-mis</span>
-        <span class="text-xs">Header image Photo by <a class="text-blue-200 underline" href="https://unsplash.com/@denisdegioanni?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Denis Degioanni</a> on <a class="text-blue-200 underline" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        <span class="text-xs"
+          >Header image Photo by
+          <a
+            class="text-blue-200 underline"
+            href="https://unsplash.com/@denisdegioanni?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Denis Degioanni</a
+          >
+          on
+          <a
+            class="text-blue-200 underline"
+            href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          >
         </span>
         <span class=""></span>
       </p>
