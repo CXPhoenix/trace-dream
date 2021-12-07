@@ -2,7 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'cwTeXYen';
+  font-style: normal;
+  font-weight: 500;
+  src: url(http://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
+  src: url(http://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format('embedded-opentype'),
+       url(http://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format('woff2'),
+       url(http://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format('woff'),
+       url(http://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'cwTeXFangSong';
+  font-style: normal;
+  font-weight: 500;
+  src: url(http://fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.eot);
+  src: url(http://fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.eot?#iefix) format('embedded-opentype'),
+       url(http://fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.woff2) format('woff2'),
+       url(http://fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.woff) format('woff'),
+       url(http://fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.ttf) format('truetype');
+}
+
 header {
+  font-family: "cwTeXYen", sans-serif;
   background-image: url(./assets/denis-degioanni-9wH624ALFQA-unsplash.jpg);
   background-size: cover;
+  background-blend-mode: multiply;
+}
+
+section {
+  font-family: "cwTeXFangSong", sans-serif;
+}
+
+.text-indent {
+  text-indent: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .text-indent {
+    text-indent: 3vw;
+  }
 }

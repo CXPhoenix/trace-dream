@@ -2,41 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="icon" href="./src/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/aos.css" />
-    <title>Vite App</title>
+    <title>復興高中尋夢計畫</title>
   </head>
   <body>
-    <header class="h-screen py-10 md:relative bg-gray-800 bg-bottom">
+    <header class="h-screen py-10 md:relative bg-gray-800/40 bg-bottom z-10">
       <div class="h-full text-center md:relative">
         <h1
           class="
             text-gray-50 text-3xl
-            md:absolute md:top-[10vh] md:right-[20vw] md:text-[5vw]
+            font-semibold
+            md:absolute md:top-[15vh] md:right-[35vw] md:text-[5vw]
           "
           data-aos="fade-up"
           data-aos-duration="600"
           data-aos-delay="100"
         >
-          尋夢，築夢，追夢
+          復興尋夢計畫
         </h1>
         <p
           class="
             text-gray-100 text-xl
             leading-5
             mt-7
-            md:absolute md:top-[18vh] md:right-[10vw] md:text-[3vw]
+            md:absolute md:top-[23vh] md:right-[28vw] md:text-[3vw]
           "
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="700"
         >
-          夢在哪，我在哪
-          <br class="md:hidden" />
-          <br class="md:hidden" />
-          <span class="hidden md:inline"> &nbsp;&nbsp;&nbsp;&nbsp; </span>
-          我不在，夢猶在
+          尋夢，築夢，追夢
         </p>
       </div>
       <img
@@ -62,32 +59,326 @@
         </label>
       </div>
     </header>
-    <nav class="fixed top-0 left-0 right-0 md:static">
+    <div id="upToNav" class="hidden fixed bottom-10 right-5 md:block">
+      <a
+        href="#nav"
+        class="cursor-pointer p-3 border-[1px] border-gray-800 rounded-md"
+      >
+        <i class="fas fa-chevron-up"></i>
+      </a>
+    </div>
+    <nav id="nav" class="fixed top-0 left-0 right-0 md:static md:relative">
       <input
         type="checkbox"
-        name="navList"
+        name="navListChecked"
         id="navListChecked"
         class="hidden peer"
       />
       <div
         id="navList"
         class="
-          w-screen
+          flex flex-col
+          p-3
           -translate-y-full
           peer-checked:translate-y-0
           peer-checked:duration-200
           peer-checked:ease-in-out
-          bg-red-400
-          md:translate-y-0
+          bg-yellow-700
+          gap-2
+          text-center text-gray-100
+          md:-z-10 md:p-[2vh] md:translate-y-0 md:gap-4
         "
       >
-        1234
+        <a
+          data-scroll
+          href="#ProjectContents"
+          class="
+            border-[2px] border-gray-200
+            rounded-lg
+            px-10
+            py-3
+            text-xl
+            hover:bg-yellow-400 hover:text-[2vw]
+            md:text-[1.5vw]
+            link
+          "
+        >
+          一、計畫內容
+        </a>
+        <a
+          data-scroll
+          href="#applyMethod"
+          class="
+            border-[2px] border-gray-200
+            rounded-lg
+            px-10
+            py-3
+            text-xl
+            hover:bg-yellow-400 hover:text-[2vw]
+            md:text-[1.5vw]
+            link
+          "
+        >
+          二、辦理方式
+        </a>
+        <a
+          data-scroll
+          href="#applyFlow"
+          class="
+            border-[2px] border-gray-200
+            rounded-lg
+            px-10
+            py-3
+            text-xl
+            hover:bg-yellow-400 hover:text-[2vw]
+            md:text-[1.5vw]
+            link
+          "
+        >
+          三、申請方式
+        </a>
+        <a
+          data-scroll
+          href="#teacherIntro"
+          class="
+            border-[2px] border-gray-200
+            rounded-lg
+            px-10
+            py-3
+            text-xl
+            hover:bg-yellow-400 hover:text-[2vw]
+            md:text-[1.5vw]
+            link
+          "
+        >
+          四、各領域業師介紹
+        </a>
+        <a
+          data-scroll
+          href="#docDownload"
+          class="
+            border-[2px] border-gray-200
+            rounded-lg
+            px-10
+            py-3
+            text-xl
+            hover:bg-yellow-400 hover:text-[2vw]
+            md:text-[1.5vw]
+            link
+          "
+        >
+          五、表單下載
+        </a>
       </div>
     </nav>
+
+    <section
+      id="ProjectContents"
+      class="
+        my-4
+        mx-auto
+        px-4
+        py-2
+        border-2 border-dashed
+        rounded-xl
+        border-blue-900
+        w-11/12
+        md:my-[10vh] md:w-9/12 md:px-8 md:mt-[4vh]
+      "
+    >
+      <h1 class="my-5 text-center text-2xl md:text-[3vw] md:my-[4vh]">
+        一、計畫內容
+      </h1>
+      <p
+        class="my-3 text-xl text-indent leading-10 md:text-[1.5vw] md:my-[3vh]"
+      >
+        配合本校自主學習實施規範，協助對於未來職涯目標明確的學生，規劃自主學習進階精進內容，透過法鼓山人文社會基金會媒合產業界業師與學校合作，讓學生接觸技術與實務能力的操作機會，可提早對職場及就業環境有所認知，加強個人適性認知，進而做出適當的職涯選擇。
+      </p>
+    </section>
+
+    <section
+      id="applyMethod"
+      class="
+        my-4
+        mx-auto
+        px-4
+        py-2
+        border-2 border-dashed
+        rounded-xl
+        border-blue-900
+        w-11/12
+        md:my-[10vh] md:w-9/12 md:px-8
+      "
+    >
+      <h1 class="my-5 text-center text-2xl md:text-[3vw] md:my-[4vh]">
+        二、辦理方式
+      </h1>
+      <p class="my-3 text-xl leading-10 md:text-[1.5vw] md:my-[3vh]">
+        (一)
+        本計劃採校內老師與校外業師協同引導制，除自主學習校內指導老師，另由法鼓山人文社會基金會媒合產業界業師，安排專業師資進行一對一的引導教學。<br />
+        (二)
+        申請者須先至「自主學習尋夢計劃專區」觀看業師介紹影片，填寫自主學習尋夢計劃申請意願表，與該階段自主學習申請表、自主學習Google表單，將已簽名完成的紙本申請表繳交至圖書館服務推廣組。
+      </p>
+    </section>
+
+    <section
+      id="applyFlow"
+      class="
+        my-4
+        mx-auto
+        px-4
+        py-2
+        border-2 border-dashed
+        rounded-xl
+        border-blue-900
+        w-11/12
+        md:my-[10vh] md:w-9/12 md:px-8
+      "
+    >
+      <h1 class="my-5 text-center text-2xl md:text-[3vw]">三、申請方式</h1>
+      <img
+        src="./src/assets/applyMethod_sm.png"
+        alt="申請流程圖"
+        class="block md:hidden"
+      />
+      <img
+        src="./src/assets/applyMethod_md.jpg"
+        alt="申請流程圖"
+        class="hidden md:block"
+      />
+    </section>
+
+    <section
+      id="teacherIntro"
+      class="
+        my-4
+        mx-auto
+        px-4
+        py-2
+        border-2 border-dashed
+        rounded-xl
+        border-blue-900
+        w-11/12
+        md:my-[10vh] md:w-9/12 md:px-8
+      "
+    >
+      <h1 class="my-5 text-center text-2xl md:text-[3vw] md:my-[5vh]">
+        四、各領域業師介紹
+      </h1>
+      <div
+        class="
+          grid grid-cols-1
+          gap-3
+          justify-items-center
+          md:gap-6 md:grid-cols-2
+        "
+      >
+        <div class="flex flex-col gap-2">
+          <iframe
+            class="w-full h-auto md:w-[30vw] md:h-[35vh]"
+            src="https://www.youtube.com/embed/YG7NIG3-Egk"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="flex flex-col gap-2">
+          <iframe
+            class="w-full h-auto md:w-[30vw] md:h-[35vh]"
+            src="https://www.youtube.com/embed/GhWd8T2SiBM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="flex flex-col gap-2">
+          <iframe
+            class="w-full h-auto md:w-[30vw] md:h-[35vh]"
+            src="https://www.youtube.com/embed/6_n7EJUBBwg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="flex flex-col gap-2">
+          <iframe
+            class="w-full h-auto md:w-[30vw] md:h-[35vh]"
+            src="https://www.youtube.com/embed/1MeRTHqqXP8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="flex flex-col gap-2">
+          <iframe
+            class="w-full h-auto md:w-[30vw] md:h-[35vh]"
+            src="https://www.youtube.com/embed/_NCNDNJHhG8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="flex flex-col gap-2">
+          <iframe
+            class="w-full h-auto md:w-[30vw] md:h-[35vh]"
+            src="https://www.youtube.com/embed/-g8jiRleVlg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="flex flex-col gap-2"></div>
+        <div class="flex flex-col gap-2"></div>
+        <div class="flex flex-col gap-2"></div>
+        <div class="flex flex-col gap-2"></div>
+      </div>
+    </section>
+
+    <section
+      id="docDownload"
+      class="
+        my-4
+        mx-auto
+        px-4
+        py-2
+        border-2 border-dashed
+        rounded-xl
+        border-blue-900
+        w-11/12
+        md:my-[10vh] md:w-9/12 md:px-8
+      "
+    >
+      <h1 class="my-5 text-center text-2xl md:text-[3vw]">五、表單下載</h1>
+      <p
+        class="my-3 text-xl leading-10 text-center md:text-[1.5vw] md:my-[3vh]"
+      >
+        <a
+          href="https://docs.google.com/document/d/1x4O6n7_NnlumKGHTvHfNdO_vwdGAxoPJ/edit?usp=sharing&ouid=113937767931996191243&rtpof=true&sd=true"
+          target="_blank"
+          class="text-blue-800 underline hover:text-blue-500"
+          >尋夢計畫申請表</a
+        >
+      </p>
+    </section>
+
+    <section id="credit" class="mt-5">
+      <p class="flex flex-col text-center bg-gray-500 text-gray-100">
+        <span class="uppercase">power by fhsh-mis</span>
+        <span class="text-xs">Header image Photo by <a class="text-blue-200 underline" href="https://unsplash.com/@denisdegioanni?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Denis Degioanni</a> on <a class="text-blue-200 underline" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </span>
+        <span class=""></span>
+      </p>
+    </section>
     <script type="module" src="./src/main.js"></script>
-    <script src="./src/aos.js"></script>
+    <script src="./src/smooth-scroll.polyfills.min.js"></script>
     <script>
-      AOS.init();
+      var scroll = new SmoothScroll('a[href*="#"]');
     </script>
   </body>
 </html>

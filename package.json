@@ -12,6 +12,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "aos": "^2.3.4",
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "smooth-scroll": "^16.1.3"
   }
 }
